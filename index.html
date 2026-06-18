@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="routersys — ゆっくりMovieMaker 4向けプラグインの開発者">
+  <title>routersys</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">routersys</span>
+    <ul class="nav-links">
+      <li><a href="#plugins">Plugins</a></li>
+      <li><a href="#about">About</a></li>
+      <li>
+        <a class="nav-github" href="https://github.com/routersys" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+          </svg>
+          GitHub
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <p class="hero-eyebrow">ゆっくりMovieMaker 4</p>
+      <h1>YMM4を<em>拡張する</em><br>プラグインを公開中</h1>
+      <p class="hero-desc">
+        YukkuriMovieMaker 4 向けのプラグインを開発しています。
+        動画制作の表現を広げるツールを公開しています。
+      </p>
+      <div class="hero-meta">
+        <div class="hero-stat">
+          <span class="hero-stat-value" id="stat-count">—</span>
+          <span class="hero-stat-label">Plugins</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">C#</span>
+          <span class="hero-stat-label">Language</span>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-value">MIT</span>
+          <span class="hero-stat-label">License</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="section" id="plugins">
+      <div class="section-header">
+        <h2 class="section-title">Plugins</h2>
+        <span class="section-count" id="plugin-count"></span>
+        <span class="updated-at" style="margin-left:auto">
+          <span class="updated-dot"></span>
+          <span id="data-updated"></span>
+        </span>
+      </div>
+      <div class="plugins-grid" id="plugins-grid">
+        <div class="loading-state">loading plugins</div>
+      </div>
+    </section>
+
+    <div class="separator"></div>
+
+    <section class="about-section" id="about">
+      <div class="about-block">
+        <h3>About</h3>
+        <p>
+          ゆっくりMovieMaker 4のプラグインを開発している routersys のポータルサイトです。
+          制作効率と表現の幅を広げるプラグインを継続的に公開しています。
+        </p>
+      </div>
+      <div class="about-block">
+        <h3>Plugin Categories</h3>
+        <div class="tag-list" id="category-tags">
+          <span class="tag loading-tag"></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-left">© routersys</span>
+    <div class="footer-right">
+      <a href="https://github.com/routersys" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
