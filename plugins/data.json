@@ -1,0 +1,377 @@
+{
+  "updated_at": "2026-06-18T11:23:45Z",
+  "repositories": [
+    {
+      "name": "YMM4-DirectionalColorKey",
+      "description": null,
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-06-10T07:45:30Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-FillSametype",
+      "description": "画像内の同形状領域を自動検出してブラシで塗りつぶす映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-05T15:07:29Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-PuppetDeformation",
+      "description": "ピンを打って画像を自由に変形させるパペットワープ映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-05-28T13:51:33Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-TextPaste",
+      "description": "アイテムの上にテキストを描画・合成する映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-26T09:35:38Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-ShapePaste",
+      "description": "アイテムの上に図形を描画・合成する映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-22T13:07:27Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-TrimMargin",
+      "description": "アイテムの透明余白をピクセル単位で検出、除去する映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-17T01:14:32Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-PerspectiveShadow",
+      "description": "点光源からの透視投影によって落ちる立体的な影を生成する映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-14T10:04:44Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-Tritone",
+      "description": "映像の輝度に応じてシャドウ・ミッドトーン・ハイライトの3色にグレードする色調補正エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-11T10:26:37Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-GodRay",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、映像に放射状の光線（ゴッドレイ）を付加するエフェクトプラグイン",
+      "language": "C#",
+      "stargazers_count": 4,
+      "pushed_at": "2026-05-08T12:21:26Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-CoverArt",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、音楽ファイルのアルバムアートをタイムライン上に図形として表示する図形プラグイン",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-08T10:41:21Z",
+      "categories": [
+        "図形プラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-DynamicEffect",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、音量レベルに応じて異なるエフェクトを自動で切り替える音声エフェクトプラグイン",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-07T12:51:43Z",
+      "categories": [
+        "音声エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-Timeline",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、現在開いているタイムラインをツールパネルとして複製表示するプラグイン",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-06T08:09:21Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-Container",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、複数の映像エフェクトをタブで管理するプラグイン",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-04T11:13:05Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-SoundFonts",
+      "description": "YMM4コミュニティプラグイン用",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-04-24T22:32:23Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-ExtendedChromakey",
+      "description": "YMM4のクロマキーを拡張します。",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-04-23T14:02:05Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-CombinedEffect",
+      "description": "YMM4向けの映像エフェクト管理プラグイン。複数のエフェクトをグループ化してプリセット保存・呼び出し・共有が可能。Gitライクな履歴管理、8言語対応、CRC32検証付きアトミック書き込みによる安全な永続化を実装",
+      "language": "C#",
+      "stargazers_count": 3,
+      "pushed_at": "2026-04-23T11:56:52Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-ObjLoader",
+      "description": "YukkuriMovieMaker4 (YMM4) 用のDirectX 11を使用したYMM4向け高性能3Dモデル表示・操作プラグイン",
+      "language": "C#",
+      "stargazers_count": 6,
+      "pushed_at": "2026-04-23T05:04:05Z",
+      "categories": [
+        "図形プラグイン",
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-GradientMap",
+      "description": "YMM4 向けグラデーションマップ映像エフェクト。HLSL GPU 描画・.grd 完全対応・27 種合成モード・インラインエディタ",
+      "language": "C#",
+      "stargazers_count": 2,
+      "pushed_at": "2026-04-18T05:21:04Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-PDF",
+      "description": "YMM4向け PDF読み込み・描画図形プラグイン。Docnet.Coreベースの描画エンジンにより高品質なベクター描画・高速なラスター描画の2モードとサムネイル付きファイル選択UIを実現。ページ番号など全パラメーターがアニメーション対応",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-04-05T13:01:57Z",
+      "categories": [
+        "図形プラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-CustomStrokeForge",
+      "description": "YMM4向け カスタム縁取り映像エフェクトプラグイン。JFAベースのSDFシェーダーにより実線・点線・破線・鎖線・二重線・波線の6スタイルと外側・中央・内側の3ポジションを実現。全パラメーターがアニメーション対応",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-04-05T11:50:25Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-SpaceAudio",
+      "description": "YukkuriMovieMaker4 向けルームリバーブシミュレータープラグイン。初期反射エンジン・8ラインFDN・インタラクティブ3Dルームエディタ・アニメーション完全統合",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-04-04T10:46:56Z",
+      "categories": [
+        "音声エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-Equalizer",
+      "description": "YMM4向け高機能パラメトリックイコライザープラグイン。最大32バンド・Biquad/TPT-SVF対応・スペクトラムアナライザー・プリセット管理・アニメーション統合",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-03-31T10:53:55Z",
+      "categories": [
+        "音声エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-WaveClipping",
+      "description": "YMM4 向け波形マスク映像エフェクトプラグイン。サイン波境界による3モードのクリッピング・全パラメータアニメーション対応・HLSLカスタムシェーダーによるGPU処理を実装",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-03-31T07:51:09Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-MCServer",
+      "description": "YMM4上で動作するMinecraftサーバー管理ツールプラグイン。Vanilla/Paper/Fabric/Forge/Bedrockに対応し、JAR取得・整合性検証・起動停止・プラグイン管理・認可システムを提供します",
+      "language": "C#",
+      "stargazers_count": 12,
+      "pushed_at": "2026-03-31T06:39:03Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-ProxyForge",
+      "description": "YMM4向け動画プロキシ自動生成プラグイン。H.264プロキシ・HWアクセラレーション・永続キャッシュ・エクスポート時自動切替",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-03-27T23:20:01Z",
+      "categories": [
+        "映像読み込みプラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-PenTool",
+      "description": "YMM4向け高機能ペン描画プラグイン。ペン・マーカー・鉛筆・消しゴムの4種ブラシ・レイヤー管理・アンドゥ/リドゥ・Direct2Dレンダリング・アニメーション統合・フローティングUIレイアウト対応",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-03-26T10:06:08Z",
+      "categories": [
+        "図形プラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-FontManager",
+      "description": "YukkuriMovieMaker4 (YMM4) 用のフォント管理プラグイン。Google Fontsを簡単に検索・プレビューし、ワンクリックでシステムへインストール・管理できます。",
+      "language": "C#",
+      "stargazers_count": 2,
+      "pushed_at": "2025-12-23T12:04:06Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-MIDI",
+      "description": "YMM4でSF2を介したMIDI音声ファイルを再生することができます。加えて、MIDI作成・編集に役立つ機能も搭載しています。",
+      "language": "C#",
+      "stargazers_count": 2,
+      "pushed_at": "2025-12-20T10:44:51Z",
+      "categories": [
+        "音声読み込みプラグイン",
+        "図形プラグイン",
+        "音声合成プラグイン",
+        "音声エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-Browser",
+      "description": "YMM4で簡易的なウェブブラウジングが可能になります。",
+      "language": "C#",
+      "stargazers_count": 2,
+      "pushed_at": "2025-11-08T04:19:35Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-CRT",
+      "description": "YMM4でブラウン管のような表現ができます。",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2025-09-14T09:29:54Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-ImageResize",
+      "description": "YMM4で画像をリサイズするツールプラグインです。",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2025-09-12T14:10:10Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-HeatHaze",
+      "description": "YMM4で熱揺らぎのようなエフェクトを追加します。",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2025-09-04T08:24:28Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-HueCorrection",
+      "description": "YMM4で色相スライダーを使って色相補正をおこないます。",
+      "language": "C#",
+      "stargazers_count": 2,
+      "pushed_at": "2025-08-30T02:32:18Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-QBCode",
+      "description": "YMM4で図形として、QRコードとバーコードを追加できます。",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2025-08-22T08:41:02Z",
+      "categories": [
+        "図形プラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-ChemicalStructure",
+      "description": "YMM4で化学構造式のモデル表示が可能です",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2025-08-22T07:17:37Z",
+      "categories": [
+        "図形プラグイン"
+      ]
+    },
+    {
+      "name": "YMM4-ShuffleFont",
+      "description": "YMM4でフォントをシャッフルします。",
+      "language": "C#",
+      "stargazers_count": 4,
+      "pushed_at": "2025-08-20T08:58:36Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-ReversePlayback",
+      "description": "YMM4の音声を逆転します。",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2025-08-18T07:43:55Z",
+      "categories": []
+    },
+    {
+      "name": "YMM4-GUIEqualizer",
+      "description": "視覚的にわかりやすいイコライザープラグインです。",
+      "language": "C#",
+      "stargazers_count": 3,
+      "pushed_at": "2025-08-06T09:50:15Z",
+      "categories": [
+        "音声エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-CustomEasing",
+      "description": "YMM4でイージングのような移動を可能にします。",
+      "language": "C#",
+      "stargazers_count": 8,
+      "pushed_at": "2025-08-03T08:54:47Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    }
+  ]
+}
