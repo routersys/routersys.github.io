@@ -1,13 +1,46 @@
 {
-  "updated_at": "2026-06-19T04:26:16Z",
+  "updated_at": "2026-06-21T04:21:02Z",
   "repositories": [
     {
+      "name": "YMM4-LuaScript",
+      "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-21T03:47:38Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
       "name": "YMM4-DirectionalColorKey",
-      "description": null,
+      "description": "背景色からの色変位方向をクラスタリングして前景を分離する映像エフェクト",
       "language": "C#",
       "stargazers_count": 1,
-      "pushed_at": "2026-06-10T07:45:30Z",
-      "categories": []
+      "pushed_at": "2026-06-21T02:03:30Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-ObjLoader",
+      "description": "YukkuriMovieMaker4 (YMM4) 用のDirectX 11を使用したYMM4向け高性能3Dモデル表示・操作プラグイン",
+      "language": "C#",
+      "stargazers_count": 6,
+      "pushed_at": "2026-06-20T10:22:48Z",
+      "categories": [
+        "図形プラグイン",
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-Equalizer",
+      "description": "YMM4向け高機能パラメトリックイコライザープラグイン。最大32バンド・Biquad/TPT-SVF対応・スペクトラムアナライザー・プリセット管理・アニメーション統合",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-20T05:10:53Z",
+      "categories": [
+        "音声エフェクト"
+      ]
     },
     {
       "name": "YMM4-FillSametype",
@@ -154,17 +187,6 @@
       ]
     },
     {
-      "name": "YMM4-ObjLoader",
-      "description": "YukkuriMovieMaker4 (YMM4) 用のDirectX 11を使用したYMM4向け高性能3Dモデル表示・操作プラグイン",
-      "language": "C#",
-      "stargazers_count": 6,
-      "pushed_at": "2026-04-23T05:04:05Z",
-      "categories": [
-        "図形プラグイン",
-        "映像エフェクト"
-      ]
-    },
-    {
       "name": "YMM4-GradientMap",
       "description": "YMM4 向けグラデーションマップ映像エフェクト。HLSL GPU 描画・.grd 完全対応・27 種合成モード・インラインエディタ",
       "language": "C#",
@@ -196,16 +218,6 @@
       "language": "C#",
       "stargazers_count": 0,
       "pushed_at": "2026-04-04T10:46:56Z",
-      "categories": [
-        "音声エフェクト"
-      ]
-    },
-    {
-      "name": "YMM4-Equalizer",
-      "description": "YMM4向け高機能パラメトリックイコライザープラグイン。最大32バンド・Biquad/TPT-SVF対応・スペクトラムアナライザー・プリセット管理・アニメーション統合",
-      "language": "C#",
-      "stargazers_count": 0,
-      "pushed_at": "2026-03-31T10:53:55Z",
       "categories": [
         "音声エフェクト"
       ]
