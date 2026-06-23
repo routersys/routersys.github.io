@@ -1,12 +1,32 @@
 {
-  "updated_at": "2026-06-21T04:21:02Z",
+  "updated_at": "2026-06-23T03:41:06Z",
   "repositories": [
+    {
+      "name": "YMM4-WaveOptics",
+      "description": "YMM4 向けの映像エフェクトプラグイン。フラウンホーファー回折理論に基づき FFT で点像分布関数を計算し、Direct2D カスタムピクセルシェーダーで映像に畳み込む波動光学エフェクト。円形・正多角形開口・中央遮蔽・6 種類のゼルニケ波面収差・3 段階の品質設定・アニメーション対応・8 言語対応を実装",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-23T03:11:15Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-VectorFieldWarp",
+      "description": "YMM4 向けの映像エフェクトプラグイン。制御点ごとに放射場と渦場を生成し、中点法による数値積分でピクセルを変位させるベクトル場変形エフェクト。最大32制御点・アニメーション対応・プレビュー上でのドラッグ編集・8言語対応を実装",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-22T13:28:01Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
     {
       "name": "YMM4-LuaScript",
       "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
       "language": "C#",
       "stargazers_count": 0,
-      "pushed_at": "2026-06-21T03:47:38Z",
+      "pushed_at": "2026-06-21T07:49:12Z",
       "categories": [
         "映像エフェクト"
       ]
