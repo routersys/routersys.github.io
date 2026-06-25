@@ -1,14 +1,54 @@
 {
-  "updated_at": "2026-06-23T03:41:06Z",
+  "updated_at": "2026-06-25T03:41:28Z",
   "repositories": [
+    {
+      "name": "YMM4-LuaScript",
+      "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-06-24T22:46:56Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
     {
       "name": "YMM4-WaveOptics",
       "description": "YMM4 向けの映像エフェクトプラグイン。フラウンホーファー回折理論に基づき FFT で点像分布関数を計算し、Direct2D カスタムピクセルシェーダーで映像に畳み込む波動光学エフェクト。円形・正多角形開口・中央遮蔽・6 種類のゼルニケ波面収差・3 段階の品質設定・アニメーション対応・8 言語対応を実装",
       "language": "C#",
       "stargazers_count": 0,
-      "pushed_at": "2026-06-23T03:11:15Z",
+      "pushed_at": "2026-06-24T03:28:00Z",
       "categories": [
         "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-PuppetDeformation",
+      "description": "ピンを打って画像を自由に変形させるパペットワープ映像エフェクト",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-06-23T14:43:50Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-HolographicFoil",
+      "description": "YMM4 向けの映像エフェクトプラグイン。視線角度に応じて変化する回折細線・虹彩・疑似凹凸・きらめきを Direct2D カスタムピクセルシェーダーで映像に合成するホログラフィック箔エフェクト。カメラ・アイテム回転・手動の角度ソース・ギロシェおよび画像アトラスの潜像モード・アルファ／輝度マスク・アニメーション対応・8 言語対応を実装",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-23T13:44:08Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-SpaceAudio",
+      "description": "YukkuriMovieMaker4 向けルームリバーブシミュレータープラグイン。初期反射エンジン・8ラインFDN・インタラクティブ3Dルームエディタ・アニメーション完全統合",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-23T09:47:57Z",
+      "categories": [
+        "音声エフェクト"
       ]
     },
     {
@@ -17,16 +57,6 @@
       "language": "C#",
       "stargazers_count": 0,
       "pushed_at": "2026-06-22T13:28:01Z",
-      "categories": [
-        "映像エフェクト"
-      ]
-    },
-    {
-      "name": "YMM4-LuaScript",
-      "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
-      "language": "C#",
-      "stargazers_count": 0,
-      "pushed_at": "2026-06-21T07:49:12Z",
       "categories": [
         "映像エフェクト"
       ]
@@ -69,16 +99,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-06-05T15:07:29Z",
       "categories": []
-    },
-    {
-      "name": "YMM4-PuppetDeformation",
-      "description": "ピンを打って画像を自由に変形させるパペットワープ映像エフェクト",
-      "language": "C#",
-      "stargazers_count": 1,
-      "pushed_at": "2026-05-28T13:51:33Z",
-      "categories": [
-        "映像エフェクト"
-      ]
     },
     {
       "name": "YMM4-TextPaste",
@@ -231,16 +251,6 @@
       "stargazers_count": 1,
       "pushed_at": "2026-04-05T11:50:25Z",
       "categories": []
-    },
-    {
-      "name": "YMM4-SpaceAudio",
-      "description": "YukkuriMovieMaker4 向けルームリバーブシミュレータープラグイン。初期反射エンジン・8ラインFDN・インタラクティブ3Dルームエディタ・アニメーション完全統合",
-      "language": "C#",
-      "stargazers_count": 0,
-      "pushed_at": "2026-04-04T10:46:56Z",
-      "categories": [
-        "音声エフェクト"
-      ]
     },
     {
       "name": "YMM4-WaveClipping",
