@@ -1,12 +1,42 @@
 {
-  "updated_at": "2026-06-25T03:41:28Z",
+  "updated_at": "2026-06-27T03:35:24Z",
   "repositories": [
     {
       "name": "YMM4-LuaScript",
       "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
       "language": "C#",
-      "stargazers_count": 1,
-      "pushed_at": "2026-06-24T22:46:56Z",
+      "stargazers_count": 2,
+      "pushed_at": "2026-06-27T03:27:44Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-PaperCutout",
+      "description": null,
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-27T03:20:37Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-CrossHatching",
+      "description": "YMM4 向け映像エフェクトプラグイン。輝度と明暗勾配からクロスハッチ線を Direct2D シェーダーで生成し、ペン画・版画・漫画・設計図風の陰影へ変換。暗部ほど線層が増え、勾配に沿う線方向・輪郭・粒状感・色モード・アニメーション・8 言語対応",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-26T10:21:30Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-FacetedGlass",
+      "description": "YMM4 向けの映像エフェクトプラグイン。三角形格子で映像を多面体ガラスに分割し、共有頂点の高さから面法線を求めて Direct2D カスタムピクセルシェーダーで屈折・反射を合成する幾何光学エフェクト。三角形格子の生成（面サイズ・分割角度・シード）・共有頂点の高さ差による凹凸・Cauchy 分散モデルによる波長別屈折と色分離・Fresnel 反射と鏡面ハイライト・面境界の反射線・方位/高度指定の指向性ライティング・アニメーション対応・8 言語対応を実装",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-25T23:37:26Z",
       "categories": [
         "映像エフェクト"
       ]
