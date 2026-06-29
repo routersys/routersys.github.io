@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-06-27T03:35:24Z",
+  "updated_at": "2026-06-29T04:04:26Z",
   "repositories": [
     {
       "name": "YMM4-LuaScript",
       "description": "Luaスクリプトでオブジェクトの座標・拡縮・回転・不透明度・ピクセルを直接制御できる映像エフェクト",
       "language": "C#",
       "stargazers_count": 2,
-      "pushed_at": "2026-06-27T03:27:44Z",
+      "pushed_at": "2026-06-29T01:27:11Z",
       "categories": [
         "映像エフェクト"
       ]
     },
     {
       "name": "YMM4-PaperCutout",
-      "description": null,
+      "description": "YMM4 向け映像エフェクトプラグイン。輝度と明暗勾配から紙の階層を Direct2D シェーダーで自動生成し、切り絵・紙工作風の立体感へ変換。暗部ほど手前の紙として扱い、階層境界に影・段差・ハイライトを合成。紙目・元色比率・光角度・紙色・アニメーション・8言語対応",
       "language": "C#",
       "stargazers_count": 0,
       "pushed_at": "2026-06-27T03:20:37Z",
