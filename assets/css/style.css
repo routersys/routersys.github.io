@@ -119,6 +119,8 @@ button:focus-visible { outline: 2px solid var(--shu); outline-offset: 3px; }
   color: var(--dim);
   max-width: 34ch;
 }
+/* 文節ごとに span で括り、内部での折り返しを禁止 → 文節境界でのみ改行 */
+.romaji span { white-space: nowrap; }
 
 .stats {
   display: flex;
