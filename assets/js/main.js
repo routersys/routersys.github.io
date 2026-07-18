@@ -16,10 +16,27 @@ const CATEGORY_ORDER = [
   "場面切り替えプラグイン",
 ];
 
-function formatDate(iso) {
+const ALL = "__all__";
+let state = { repos: [], active: ALL };
+
+/* ---------- JST clock ---------- */
+(function clock() {
+  const el = document.getElementById("jst");
+  if (!el) return;
+  const tick = () => {
+    el.textContent = new Date().toLocaleTimeString("ja-JP", {
+      timeZone: "Asia/Tokyo",
+      hour12: false,
+    });
+  };
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ---------- helpers ---------- */
+function formatRelative(iso) {
   const d = new Date(iso);
-  const now = new Date();
-  const diff = Math.floor((now - d) / 1000);
+  const diff = Math.floor((Date.now() - d) / 1000);
   if (diff < 60) return "just now";
   if (diff < 3600) return `${Math.floor(diff / 60)}m ago`;
   if (diff < 86400) return `${Math.floor(diff / 3600)}h ago`;
@@ -27,106 +44,144 @@ function formatDate(iso) {
   return d.toLocaleDateString("ja-JP", { year: "numeric", month: "short" });
 }
 
-function escapeHtml(str) {
+function formatDate(iso) {
+  return new Date(iso).toLocaleDateString("ja-JP", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  });
+}
+
+function esc(str) {
   const div = document.createElement("div");
-  div.textContent = str;
+  div.textContent = str == null ? "" : String(str);
   return div.innerHTML;
 }
 
-function renderPluginCard(repo) {
-  const name = repo.name.replace("YMM4-", "");
-  const desc = repo.description || "No description";
+/* ---------- rendering ---------- */
+function pluginCard(repo) {
+  const name = repo.name.replace(/^YMM4-/, "");
+  const desc = repo.description || "説明はありません。";
   const lang = repo.language || "—";
   const stars = repo.stargazers_count ?? 0;
   const updated = repo.pushed_at || repo.updated_at;
-  const categories = repo.categories || [];
+  const cats = repo.categories || [];
 
-  const categoryHtml = categories.length > 0
-    ? categories.map(c => `<span class="plugin-category">${escapeHtml(c)}</span>`).join("")
+  const catsHtml = cats.length
+    ? `<div class="card-cats">${cats
+        .map((c) => `<span class="card-cat">${esc(c)}</span>`)
+        .join("")}</div>`
     : "";
 
   return `
-    <article class="plugin-card">
-      <div class="plugin-card-header">
-        <span class="plugin-name">${escapeHtml(name)}</span>
-        <span class="plugin-lang">${escapeHtml(lang)}</span>
+    <article class="card">
+      <div class="card-head">
+        <span class="card-name">${esc(name)}</span>
+        <span class="card-lang">${esc(lang)}</span>
       </div>
-      <p class="plugin-desc">${escapeHtml(desc)}</p>
-      ${categoryHtml ? `<div class="plugin-categories">${categoryHtml}</div>` : ""}
-      <div class="plugin-footer">
-        <span class="plugin-stars">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-          </svg>
+      <p class="card-desc">${esc(desc)}</p>
+      ${catsHtml}
+      <div class="card-foot">
+        <span class="card-stars" title="Stars">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
           ${stars}
         </span>
-        <span class="plugin-updated">${formatDate(updated)}</span>
-        <a class="plugin-link" href="https://github.com/${GITHUB_USER}/${escapeHtml(repo.name)}" target="_blank" rel="noopener">
-          GitHub →
-        </a>
+        <span class="card-updated">${updated ? formatRelative(updated) : ""}</span>
+        <a class="card-link" href="https://github.com/${GITHUB_USER}/${esc(repo.name)}" target="_blank" rel="noopener">GitHub →</a>
       </div>
-    </article>
-  `;
+    </article>`;
 }
 
-function renderCategoryTags(repos) {
-  const found = new Set();
-  for (const repo of repos) {
-    for (const cat of (repo.categories || [])) {
-      found.add(cat);
-    }
-  }
+function renderGrid() {
+  const grid = document.getElementById("grid");
+  const list =
+    state.active === ALL
+      ? state.repos
+      : state.repos.filter((r) => (r.categories || []).includes(state.active));
 
-  const tags = CATEGORY_ORDER.filter(c => found.has(c));
-
-  const el = document.getElementById("category-tags");
-  if (!el) return;
-
-  if (tags.length === 0) {
-    el.innerHTML = "";
+  if (!list.length) {
+    grid.innerHTML = `<div class="state">該当するプラグインはありません。</div>`;
     return;
   }
-
-  el.innerHTML = tags.map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("");
+  grid.innerHTML = list.map(pluginCard).join("");
 }
 
-async function loadPlugins() {
-  const grid = document.getElementById("plugins-grid");
-  const countEl = document.getElementById("plugin-count");
-  const statCountEl = document.getElementById("stat-count");
+function renderFilters() {
+  const el = document.getElementById("filters");
+  const counts = new Map();
+  for (const r of state.repos)
+    for (const c of r.categories || []) counts.set(c, (counts.get(c) || 0) + 1);
+
+  const present = CATEGORY_ORDER.filter((c) => counts.has(c));
+  const buttons = [
+    { key: ALL, label: "すべて", n: state.repos.length },
+    ...present.map((c) => ({ key: c, label: c, n: counts.get(c) })),
+  ];
+
+  el.innerHTML = buttons
+    .map(
+      (b) =>
+        `<button class="filter" role="tab" data-key="${esc(b.key)}" aria-selected="${b.key === state.active}">${esc(
+          b.label
+        )}<span class="n">${b.n}</span></button>`
+    )
+    .join("");
+
+  el.querySelectorAll(".filter").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      state.active = btn.dataset.key;
+      el.querySelectorAll(".filter").forEach((b) =>
+        b.setAttribute("aria-selected", String(b.dataset.key === state.active))
+      );
+      renderGrid();
+    });
+  });
+}
+
+function renderCategoryTags() {
+  const el = document.getElementById("category-tags");
+  if (!el) return;
+  const found = new Set();
+  for (const r of state.repos) for (const c of r.categories || []) found.add(c);
+  const tags = CATEGORY_ORDER.filter((c) => found.has(c));
+  el.innerHTML = tags.length
+    ? tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")
+    : `<span class="tag">準備中</span>`;
+}
+
+/* ---------- load ---------- */
+async function load() {
+  const grid = document.getElementById("grid");
   const updatedEl = document.getElementById("data-updated");
+  const statCount = document.getElementById("stat-count");
+  const statUpdated = document.getElementById("stat-updated");
 
   try {
     const res = await fetch(`${DATA_FILE}?v=${Date.now()}`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
-    const repos = data.repositories || [];
+    state.repos = data.repositories || [];
     const updatedAt = data.updated_at || null;
 
-    countEl.textContent = `${repos.length} plugins`;
-    if (statCountEl) statCountEl.textContent = repos.length;
+    if (statCount) statCount.textContent = state.repos.length;
+    if (statUpdated && updatedAt) statUpdated.textContent = formatDate(updatedAt);
+    if (updatedEl)
+      updatedEl.textContent = updatedAt
+        ? `更新 ${formatRelative(updatedAt)}`
+        : `${state.repos.length} plugins`;
 
-    if (updatedAt) {
-      updatedEl.textContent = `Updated ${formatDate(updatedAt)}`;
-    }
-
-    renderCategoryTags(repos);
-
-    if (repos.length === 0) {
-      grid.innerHTML = `<div class="error-state">No plugins found.</div>`;
-      return;
-    }
-
-    grid.innerHTML = repos.map(renderPluginCard).join("");
+    renderFilters();
+    renderCategoryTags();
+    renderGrid();
   } catch {
     grid.innerHTML = `
-      <div class="error-state">
-        Failed to load plugin data.<br>
-        <a href="https://github.com/${GITHUB_USER}" target="_blank" rel="noopener" style="color:var(--accent)">View on GitHub →</a>
-      </div>
-    `;
+      <div class="state">
+        プラグインデータを読み込めませんでした。<br>
+        <a href="https://github.com/${GITHUB_USER}" target="_blank" rel="noopener">GitHub で見る →</a>
+      </div>`;
+    if (updatedEl) updatedEl.textContent = "読み込みエラー";
   }
 }
 
-document.addEventListener("DOMContentLoaded", loadPlugins);
+document.addEventListener("DOMContentLoaded", load);
