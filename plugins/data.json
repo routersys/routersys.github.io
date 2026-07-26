@@ -1,6 +1,16 @@
 {
-  "updated_at": "2026-07-25T01:43:55Z",
+  "updated_at": "2026-07-26T01:46:20Z",
   "repositories": [
+    {
+      "name": "YMM4-CausticTransport",
+      "description": "YMM4 向け映像エフェクトプラグイン。現在フレームの輝度を輸送格子へ集め、光源形状が定める目標分布への輸送写像をマルチグリッド Poisson 反復で解き、集光度に応じた分布輸送で光源形状への拡散から元映像への結像までを合成。ComputeSharp による Direct3D 12 GPU 処理と Direct3D 11・12 共有相互運用・光源形状（面・円・横スリット・縦スリット）・波長別輸送による分散色分離・面粗さ散乱・3 段階の品質設定・アニメーション・8 言語対応",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-07-25T14:42:45Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
     {
       "name": "YMM4-Kintsugi",
       "description": "開発は中断しています",
@@ -116,16 +126,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-07-16T23:19:24Z",
       "categories": []
-    },
-    {
-      "name": "YMM4-CausticTransport",
-      "description": "YMM4 向け映像エフェクトプラグイン。現在フレームの輝度を輸送格子へ集め、光源形状が定める目標分布への輸送写像をマルチグリッド Poisson 反復で解き、集光度に応じた分布輸送で光源形状への拡散から元映像への結像までを合成。ComputeSharp による Direct3D 12 GPU 処理と Direct3D 11・12 共有相互運用・光源形状（面・円・横スリット・縦スリット）・波長別輸送による分散色分離・面粗さ散乱・3 段階の品質設定・アニメーション・8 言語対応",
-      "language": "C#",
-      "stargazers_count": 0,
-      "pushed_at": "2026-07-16T10:17:41Z",
-      "categories": [
-        "映像エフェクト"
-      ]
     },
     {
       "name": "YMM4-TopologicalMaterialField",
