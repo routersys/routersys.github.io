@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-10T00:54:54Z",
+  "updated_at": "2026-08-11T00:54:14Z",
   "repositories": [
     {
       "name": "YMM4-EffectExclusion",
       "description": "YMM4 向け映像エフェクトプラグイン。グループ制御やエフェクトアイテムの効果を特定のアイテムだけ除外する。Harmony による実行時パッチでエフェクト構成と描画順を制御し、備考欄の文字列で対象を指定できる。座標変換の除外・専用アセンブリ名による衝突回避・定期監査・8言語対応",
       "language": "C#",
       "stargazers_count": 0,
-      "pushed_at": "2026-08-07T00:10:11Z",
+      "pushed_at": "2026-08-10T19:08:16Z",
       "categories": []
     },
     {
