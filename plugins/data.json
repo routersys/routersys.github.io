@@ -1,6 +1,16 @@
 {
-  "updated_at": "2026-08-19T00:36:34Z",
+  "updated_at": "2026-08-20T00:36:35Z",
   "repositories": [
+    {
+      "name": "YMM4-Container",
+      "description": "YukkuriMovieMaker4（YMM4）上で動作する、複数の映像エフェクトをタブで管理するプラグイン",
+      "language": "C#",
+      "stargazers_count": 0,
+      "pushed_at": "2026-08-19T09:09:12Z",
+      "categories": [
+        "映像エフェクト"
+      ]
+    },
     {
       "name": "YMM4-Ukiyoe",
       "description": "YMM4 向け映像エフェクトプラグイン。素材を多色木版画の原画とみなし、エッジ接線流と流れに沿った差分ガウスで求めた輪郭主線と、L1 局所平坦化の反復重み付き最小二乗で均した限定パレットの色面に、シードから決定論的に決まる和紙の繊維とばれん目と版ずれを刷り重ねて浮世絵として描画し元映像へ合成。ComputeSharp による Direct3D 12 GPU 処理と Direct3D 11・12 共有相互運用・シルエットハッシュによる構造キャッシュ・可視範囲への出力矩形最小化・線の太さと流れと量による主線制御・色数と版ずれとばれん目と和紙による意匠制御・3 段階の品質設定・アニメーション・8 言語対応",
@@ -441,16 +451,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-05-06T08:09:21Z",
       "categories": []
-    },
-    {
-      "name": "YMM4-Container",
-      "description": "YukkuriMovieMaker4（YMM4）上で動作する、複数の映像エフェクトをタブで管理するプラグイン",
-      "language": "C#",
-      "stargazers_count": 0,
-      "pushed_at": "2026-05-04T11:13:05Z",
-      "categories": [
-        "映像エフェクト"
-      ]
     },
     {
       "name": "YMM4-SoundFonts",
