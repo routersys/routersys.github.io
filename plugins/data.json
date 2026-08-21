@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-08-20T00:36:35Z",
+  "updated_at": "2026-08-21T00:39:05Z",
   "repositories": [
+    {
+      "name": "YMM4-UTAU",
+      "description": null,
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-08-20T22:23:54Z",
+      "categories": []
+    },
     {
       "name": "YMM4-Container",
       "description": "YukkuriMovieMaker4（YMM4）上で動作する、複数の映像エフェクトをタブで管理するプラグイン",
