@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-08-21T00:39:05Z",
+  "updated_at": "2026-08-22T00:36:22Z",
   "repositories": [
     {
-      "name": "YMM4-UTAU",
+      "name": "YMM4-LayerPinning",
       "description": null,
       "language": "C#",
-      "stargazers_count": 1,
-      "pushed_at": "2026-08-20T22:23:54Z",
+      "stargazers_count": 0,
+      "pushed_at": "2026-08-22T00:32:41Z",
       "categories": []
     },
     {
@@ -14,9 +14,19 @@
       "description": "YukkuriMovieMaker4（YMM4）上で動作する、複数の映像エフェクトをタブで管理するプラグイン",
       "language": "C#",
       "stargazers_count": 0,
-      "pushed_at": "2026-08-19T09:09:12Z",
+      "pushed_at": "2026-08-21T05:42:19Z",
       "categories": [
         "映像エフェクト"
+      ]
+    },
+    {
+      "name": "YMM4-UTAU",
+      "description": "YMM4 向け音声合成プラグイン。UTAU 音源の原音設定をそのまま素材とみなし、歌詞から作る 6 つの形と声色・音域の接辞の組で引いた原音を、休符で切る区間ごとに WorldNet で分析し直して 1 本のパラメータ列へ束ね、重なりをスペクトルと非周期性指標の相補重みと有声成分の対数加重平均で継いで歌声として合成。WORLD の C# 移植 WorldNet による分析合成・単独音と連続音と CVVC の別名解決・確保のない走査による音素化・区間ごとの並列合成・分析と合成結果の二段キャッシュ・UST の読み込みとフレーズ単位の分割・ピアノロールでの音程と長さとビブラートとポルタメントの編集・フォルマントと息の量と高域の強調による声質制御・8 言語対応",
+      "language": "C#",
+      "stargazers_count": 1,
+      "pushed_at": "2026-08-21T05:25:27Z",
+      "categories": [
+        "音声合成プラグイン"
       ]
     },
     {
